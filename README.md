@@ -1,36 +1,38 @@
 # 🐧 Linux & Bash Security Lab
 
-**Hands-on laboratory focused on Linux, Bash Scripting, and Cybersecurity Fundamentals.**
+**Hands-on Linux and Bash laboratory focused on scripting, automation, file management, and basic log analysis.**
 
 ## 📌 About This Repository
 
-This repository documents my hands-on learning journey in Linux, Bash Scripting, and Cybersecurity Fundamentals.
+This repository documents my practical learning journey in Linux, Bash Scripting, and Cybersecurity Fundamentals.
 
-The main goal is to develop practical technical skills through laboratories, exercises, and small projects focused on system administration, automation, and information processing.
+It contains hands-on exercises, scripts, and small projects developed to strengthen my understanding of Linux commands, shell scripting, file management, automation, and basic log analysis.
 
-This repository is part of my self-directed learning path toward a professional career in cybersecurity.
+The main goal is to apply theoretical knowledge through practical experimentation while building a foundation for a professional career in cybersecurity.
 
 ## 🎯 Learning Objectives
 
-* Become familiar with the Linux environment and command-line interface.
-* Understand and apply fundamental Linux administration commands.
-* Develop scripts using Bash.
-* Work with variables, arguments, functions, conditionals, and loops.
-* Automate tasks through shell scripting.
-* Process files and analyze system logs.
-* Strengthen problem-solving and troubleshooting skills.
+* Understand the Linux command-line environment.
+* Practice fundamental Linux commands.
+* Develop Bash scripts using variables, arguments, functions, conditionals, and loops.
+* Understand file and directory management.
+* Automate basic administrative tasks.
+* Process and analyze text files and system logs.
+* Improve troubleshooting and problem-solving skills.
+* Apply programming concepts to practical Linux scenarios.
 
 ## 🛠️ Technologies & Tools
 
-| Technology     | Purpose                              |
-| -------------- | ------------------------------------ |
-| Linux / Ubuntu | Learning environment                 |
-| Bash           | Scripting and automation             |
-| Git            | Version control                      |
-| GitHub         | Project management and documentation |
-| WSL 2          | Linux environment on Windows         |
-| grep           | Searching and filtering information  |
-| wc             | Counting lines and other elements    |
+| Technology     | Purpose                        |
+| -------------- | ------------------------------ |
+| Linux / Ubuntu | Operating environment          |
+| Bash           | Shell scripting and automation |
+| WSL 2          | Linux environment on Windows   |
+| Git            | Version control                |
+| GitHub         | Repository management          |
+| grep           | Text searching and filtering   |
+| wc             | Counting lines and elements    |
+| nano           | Terminal-based text editing    |
 
 ## 📂 Repository Structure
 
@@ -39,115 +41,124 @@ linux-bash-security-lab/
 │
 ├── README.md
 │
-├── scripts/
-│   └── analizador_logs.sh
+├── backup/
+│   └── usuario.txt
+│
+├── documentos/
+│   ├── notas.txt
+│   ├── sistema.txt
+│   └── usuario.txt
 │
 ├── logs/
-│   └── servidor.log
+│   ├── comandos.log
+│   ├── servidor.log
+│   ├── usuario.txt
+│   ├── usuarios.log
+│   └── usuarios.txt
 │
-├── exercises/
-│
-└── screenshots/
+└── scripts/
+    ├── analizados_logs.sh
+    ├── argumentos.sh
+    ├── bucle.sh
+    ├── contador.sh
+    ├── funcion_suma.sh
+    ├── funciones.sh
+    ├── informacion_usuario.sh
+    ├── notas.sh
+    ├── numero.sh
+    ├── operaciones.sh
+    ├── secreto.sh
+    ├── suma.sh
+    └── validacion_edad.sh
 ```
 
-The repository structure will expand as I progress through new laboratories and practical exercises.
+## 🧪 Practical Laboratories
 
-## 🔍 Project 01: Basic Log Analyzer
+### 01. Bash Fundamentals
 
-### Overview
+Exercises focused on understanding the basic structure of Bash scripts and command-line interaction.
 
-A Bash script designed to receive a log file as a command-line argument, validate its existence, and process its contents to identify and count different types of events.
+Topics covered:
 
-This project represents my first practical approach to automated log analysis using native Linux command-line tools.
+* Variables and user input.
+* Positional arguments.
+* Conditional statements.
+* Loops.
+* Functions.
+* Arithmetic operations.
+* Return codes.
 
-### Implemented Features
+### 02. File and Directory Management
+
+Practical exercises involving file creation, reading, writing, and directory organization.
+
+Topics covered:
+
+* File manipulation.
+* Directory navigation.
+* Text processing.
+* Basic backup operations.
+
+### 03. Log Analysis
+
+**Project: Basic Log Analyzer**
+
+A Bash script designed to process log files, validate their existence, and identify different event categories.
+
+Implemented features:
 
 * Command-line argument validation.
 * File existence verification.
 * Total line counting.
-* INFO event identification and counting.
-* ERROR event identification and counting.
-* WARNING event identification and counting.
+* INFO event counting.
+* ERROR event counting.
+* WARNING event counting.
 * Terminal-based report generation.
 
-### Tools & Concepts Used
+Tools used:
 
-* `grep`: Pattern searching and matching line counting.
-* `wc`: Line counting.
-* `if / elif / else`: Conditional statements.
-* Bash variables: Storing command results.
-* Positional arguments: Receiving file paths.
-* Input redirection: Processing file contents.
+* `grep`
+* `wc`
+* Bash variables.
+* Conditional statements.
+* Input redirection.
 
-### Usage
+#### Execution
 
-Clone the repository:
-
-```bash
-git clone YOUR_REPOSITORY_URL
-```
-
-Navigate to the project directory:
+From the repository root:
 
 ```bash
-cd linux-bash-security-lab
+chmod +x scripts/analizados_logs.sh
 ```
 
-Grant execution permissions:
+Run the script:
 
 ```bash
-chmod +x scripts/analizador_logs.sh
+./scripts/analizados_logs.sh logs/servidor.log
 ```
 
-Run the log analyzer:
+*Note: The script name and file paths correspond to the current repository structure.*
 
-```bash
-./scripts/analizador_logs.sh logs/servidor.log
-```
+## 📚 Learning Approach
 
-### Example Output
+This repository follows a hands-on learning methodology:
 
-```text
-The file exists
-------------------------------
-EVENT ANALYZER
-------------------------------
-File: logs/servidor.log
-Total lines: 8
-
-EVENTS:
-INFO: 3
-ERROR: 2
-WARNING: 1
-------------------------------
-```
-
-*Output values depend on the contents of the input log file.*
-
-### Project Scope & Limitations
-
-This project is intended for educational purposes and uses fictional log files.
-
-The current implementation performs basic text-based analysis. It is not an advanced threat detection system and does not replace professional security monitoring solutions.
-
-## 📚 Learning Methodology
-
-This repository follows a progressive hands-on learning approach:
-
-1. Study fundamental concepts.
-2. Solve practical exercises.
-3. Build small-scale laboratories.
-4. Document acquired knowledge.
-5. Continuously improve existing projects.
+1. Learn fundamental concepts.
+2. Practice through individual exercises.
+3. Develop small Bash scripts.
+4. Apply concepts to practical scenarios.
+5. Document results and challenges.
+6. Continuously improve existing implementations.
 
 ## 🚀 Future Improvements
 
 * [ ] Complete the Linux and Bash integration laboratory.
-* [ ] Implement additional input validation.
-* [ ] Introduce system administration automation.
-* [ ] Practice Linux permissions and user management.
-* [ ] Develop practical networking laboratories.
-* [ ] Build additional cybersecurity-focused projects.
+* [ ] Improve script validation and error handling.
+* [ ] Expand log analysis capabilities.
+* [ ] Develop Linux system administration exercises.
+* [ ] Practice user and permission management.
+* [ ] Explore networking fundamentals.
+* [ ] Develop additional cybersecurity-focused laboratories.
 
 ## 👨‍💻 About Me
 
@@ -155,11 +166,12 @@ This repository follows a progressive hands-on learning approach:
 
 Software Engineering Student | Aspiring Cybersecurity Professional
 
-Interested in Linux, programming, automation, networking, and information security.
+Interested in Linux, Bash Scripting, programming, networking, automation, and information security.
 
-This repository represents my continuous learning process, practical experience, and professional growth in the technology field.
+This repository represents my ongoing commitment to practical learning, technical development, and professional growth in cybersecurity.
 
 ---
 
 ⭐ *Learn, practice, document, and build. One laboratory at a time.*
+
 
