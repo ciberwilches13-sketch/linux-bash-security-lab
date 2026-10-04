@@ -1,0 +1,42 @@
+.
+├── Documento_de_texto.txt
+├── NOTAS.TXT
+├── examen_linux
+│   ├── backup
+│   ├── documentos
+│   │   ├── notas.txt
+│   │   ├── sistema.txt
+│   │   └── usuario.txt
+│   ├── logs
+│   └── scripts
+├── guardarscript.sh
+├── laboratorio
+│   ├── andresw.txt
+│   ├── herramientas
+│   ├── notas
+│   │   └── linux.txt
+│   └── scripts
+│       ├── scripts_bucles.sh
+│       └── scripts_logica.sh
+├── new_doc.txt
+├── newlab
+│   ├── andresw.txt
+│   ├── herramientas
+│   ├── herramientas.txt
+│   ├── notas
+│   │   └── linux.txt
+│   └── scripts
+├── nuevo_archivo.txt
+├── parametros_script.sh
+├── scripts.sh
+├── scripts_logica.sh
+├── snap
+│   └── htop
+│       ├── 6429
+│       ├── 6487
+│       ├── common
+│       └── current -> 6429
+├── temp.txt
+└── temp2.txt
+
+20 directories, 20 files

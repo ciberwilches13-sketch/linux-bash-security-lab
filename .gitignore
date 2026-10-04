@@ -1,0 +1,9 @@
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Sensitive files
+.env
+*.key
+*.pem
