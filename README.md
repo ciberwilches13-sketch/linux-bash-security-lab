@@ -150,6 +150,55 @@ This repository follows a hands-on learning methodology:
 5. Document results and challenges.
 6. Continuously improve existing implementations.
 
+## Skills Demonstrated
+
+Through this project, I practiced and applied:
+
+* **Linux command line:** navigating directories, managing files and permissions.
+* **Bash scripting:** variables, arguments, conditionals, loops, and functions.
+* **Input validation:** checking arguments and verifying file existence.
+* **Log analysis:** filtering and counting log events using `grep` and `wc`.
+* **Basic automation:** creating scripts to perform repetitive tasks.
+* **Git and GitHub:** version control, commits, and remote repository management.
+* **SSH authentication:** connecting to GitHub securely using SSH keys.
+
+## Featured Project: Log Analyzer
+
+The log analyzer is a Bash script that processes a log file and generates a summary of its contents.
+
+It demonstrates:
+
+* Command-line argument handling.
+* File validation.
+* Counting log entries.
+* Filtering events by severity (`INFO`, `ERROR`, and `WARNING`).
+* Displaying a structured report.
+
+### Example
+
+```bash
+bash scripts/analizados_logs.sh logs/servidor.log
+```
+
+## Learning Outcomes
+
+By completing this laboratory, I strengthened my understanding of Linux fundamentals and Bash scripting. I also gained practical experience managing a project with Git and publishing it through GitHub using SSH authentication.
+
+## Future Improvements
+
+* Add more advanced log analysis features.
+* Implement error handling and more robust input validation.
+* Create scripts for basic system monitoring.
+* Practice Linux permissions and user management.
+* Explore cybersecurity tools and practical security scenarios.
+
+## Project Status
+
+<badge color="success" label="Published"/> **Active learning project**
+
+This repository is part of my ongoing journey toward becoming a cybersecurity professional. It will evolve as I develop new technical skills and complete more practical exercises.
+
+
 ## 🚀 Future Improvements
 
 * [ ] Complete the Linux and Bash integration laboratory.
