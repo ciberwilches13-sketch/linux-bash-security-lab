@@ -7,3 +7,9 @@
 .env
 *.key
 *.pem
+
+# Generated backups and temporary reports
+linux_security_lab/backup/*
+!linux_security_lab/backup/usuarios.txt.bak
+linux_security_lab/reports/*
+linux_security_lab/logs/*
