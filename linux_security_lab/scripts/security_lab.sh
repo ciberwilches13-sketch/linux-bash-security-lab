@@ -32,7 +32,7 @@ case $option in
    echo "---------------------------------------"
    read usuario
    echo "---------------------------------------"
-   grep -w  $usuario ./data/usuarios.txt
+   grep -w  "$usuario" ./data/usuarios.txt
    if [ $? -eq 0 ]; then
       echo "El usuario existe"
    else
